@@ -1,1 +1,139 @@
-<!doctype html><html lang="he" dir="rtl"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>DallNet · בית הספר הטכנולוגי לקייה</title><style>body{font:17px Arial;background:#edf2fa;color:#18345f;display:grid;min-height:100dvh;place-items:center;margin:0}.card{max-width:620px;padding:34px;background:white;border-radius:18px;text-align:center;box-shadow:0 9px 35px #2c426522}h1{color:#1c4b9e}p{line-height:1.7}</style><div class="card"><h1>DallNet Systems</h1><h2>בית הספר הטכנולוגי לקייה</h2><h3>المدرسة التكنولوجية اللقية</h3><p>שאלוני מוכנות ללמידה מרחוק · استبيانات الاستعداد للتعلم عن بُعد</p><p>יש להשתמש בקישור הייעודי שנמסר מהנהלת בית הספר.</p><small>© Ali Dallasheh · DallNet Systems · 2026</small></div></html>
+
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>DallNet | מוכנות ללמידה מרחוק</title>
+<style>
+*{box-sizing:border-box}
+body{
+ margin:0;
+ min-height:100vh;
+ font-family:Arial,sans-serif;
+ background:linear-gradient(135deg,#edf3ff,#e8f3f4);
+ color:#17315b;
+ display:flex;
+ align-items:center;
+ justify-content:center;
+ padding:22px
+}
+main{
+ width:100%;
+ max-width:900px;
+ background:white;
+ border-radius:25px;
+ padding:35px;
+ box-shadow:0 15px 50px #233b6220
+}
+header{text-align:center}
+.brand{
+ font-size:clamp(30px,5vw,45px);
+ font-weight:800;
+ color:#1753ae;
+ margin-bottom:15px
+}
+h1{font-size:clamp(22px,4vw,30px);margin:10px 0}
+.ar{font-size:21px;color:#375b84}
+.subtitle{margin:25px 0;color:#526783;line-height:1.7}
+.grid{
+ display:grid;
+ grid-template-columns:repeat(3,1fr);
+ gap:15px;
+ margin-top:25px
+}
+.card{
+ display:flex;
+ flex-direction:column;
+ align-items:center;
+ justify-content:space-between;
+ gap:14px;
+ padding:25px 15px;
+ border:1px solid #dde7f3;
+ border-radius:18px;
+ background:#f7faff;
+ text-align:center;
+ transition:transform .2s,box-shadow .2s
+}
+.card:hover{
+ transform:translateY(-4px);
+ box-shadow:0 8px 22px #203b651a
+}
+.symbol{font-size:42px}
+.card h2{font-size:21px;margin:0}
+.card p{font-size:14px;line-height:1.7;margin:0}
+a.btn{
+ text-decoration:none;
+ color:white;
+ border-radius:11px;
+ padding:12px 20px;
+ display:block;
+ width:100%;
+ font-weight:bold;
+ background:#1759b5
+}
+.staff a.btn{background:#0b8271}
+.admin a.btn{background:#6652a6}
+footer{
+ border-top:1px solid #e5ebf4;
+ margin-top:30px;
+ padding-top:20px;
+ text-align:center;
+ font-size:13px;
+ color:#64748b
+}
+@media(max-width:650px){
+ main{padding:22px}
+ .grid{grid-template-columns:1fr}
+ .card{padding:22px}
+}
+</style>
+</head>
+<body>
+<main>
+ <header>
+  <div class="brand">DallNet Systems</div>
+  <h1>בית הספר הטכנולוגי לקייה</h1>
+  <div class="ar" lang="ar">
+   المدرسة التكنولوجية اللقية
+  </div>
+  <p class="subtitle">
+   מערכת מוכנות ללמידה מרחוק
+   <br>
+   منظومة الاستعداد للتعلم عن بُعد
+  </p>
+ </header>
+
+ <section class="grid" aria-label="בחירת שער כניסה">
+  <div class="card">
+   <div class="symbol">🎓</div>
+   <h2>שאלון תלמידים</h2>
+   <p>בחירת כיתה ושם תלמיד ומילוי שאלון מוכנות.</p>
+   <a class="btn" href="./student/">כניסת תלמידים</a>
+  </div>
+
+  <div class="card staff">
+   <div class="symbol">👨‍🏫</div>
+   <h2>שאלון צוות</h2>
+   <p>כניסה בקוד צוות, בחירת מורה ואישור שיוכי הוראה.</p>
+   <a class="btn" href="./staff/">כניסת צוות</a>
+  </div>
+
+  <div class="card admin">
+   <div class="symbol">🛡️</div>
+   <h2>ממשק מנהל</h2>
+   <p>מעקב היענות, דוחות, ניתוח נתונים וניהול מערכת.</p>
+   <a class="btn" href="./admin/">כניסת מנהל</a>
+  </div>
+ </section>
+
+ <footer>
+  © 2026 DallNet Systems
+  <br>
+  Smart Learning Systems · Ali Dallasheh
+  <br>
+  כל הזכויות שמורות
+ </footer>
+</main>
+</body>
+</html>
